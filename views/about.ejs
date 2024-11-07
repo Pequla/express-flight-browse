@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+<h3>About</h3>
+<p>This application is a simple example of how to build and deploy a monolithic web app using Node.js, Express, and EJS. The project is designed to give students a hands-on experience with a basic web application that doesn’t require a database or user login, keeping the focus on server-side rendering, API integration, and deployment.</p>
+
+<p>In this application, you can browse a list of flights and view detailed information for each one. The flight data is not stored in a local database but is instead retrieved from an external API. We use the Axios library to fetch this data directly from the Node server, simulating a real data source and keeping the app lightweight.</p>
+
+<p>Our goal here is to demonstrate how to set up a full stack application and deploy it without the added complexity of databases or user authentication. By using server-side rendering with EJS, the app keeps the structure simple, while still offering dynamic content in the form of flight details.</p>
+
+<p>Students can use this example to understand the basics of:</p>
+<ul>
+  <li>Setting up a Node.js and Express server</li>
+  <li>Using EJS templates to render HTML on the server-side</li>
+  <li>Integrating an external API using Axios</li>
+  <li>Deploying a monolithic application without a separate frontend framework</li>
+</ul>
+
+<p>This project provides a foundation that can be expanded upon in more complex applications, such as adding a database for persistent data storage or implementing user authentication for secure access.</p>
+<%- include('partials/footer') %>

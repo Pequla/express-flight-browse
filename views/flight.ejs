@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+<div class="my-5">
+  <div class="card bg-secondary text-light shadow-lg">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="https://img.pequla.com/destination/<%= data.destination.toLowerCase().split(" ")[0]%>.jpg" class="img-fluid rounded-start">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h3 class="card-title"><%= data.destination%></h3>
+          <p class="card-text">
+            <strong>Flight Number:</strong> <%= data.flightNumber%><br>
+            <strong>Plane Model:</strong> <%= data.plane%><br>
+            <strong>Scheduled At:</strong> <%= new Date(data.scheduledAt).toLocaleString('sr-RS')%>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('partials/footer') %>
