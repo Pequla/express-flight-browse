@@ -3,6 +3,6 @@ Example express application using EJS templating technology developed for tutori
 
 `.env` file example
 ```
-API_URL=https://flight.pequla.com/api
+API_BASE=https://flight.pequla.com/api
 APP_PORT=3000
 ```
