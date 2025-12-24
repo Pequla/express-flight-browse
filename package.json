@@ -1,20 +1,27 @@
 {
-  "name": "nodetpl",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "express-flight-browse",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
   "scripts": {
-    "dev": "nodemon index.js"
-  },
-  "author": "Pequla",
-  "license": "MIT",
-  "dependencies": {
-    "axios": "^1.4.0",
-    "dotenv": "^16.5.0",
-    "ejs": "^3.1.9",
-    "express": "^4.18.2"
+    "dev": "bun --watch ./src/index.ts"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "@types/axios": "^0.14.4",
+    "@types/bun": "latest",
+    "@types/dotenv": "^8.2.3",
+    "@types/ejs": "^3.1.5",
+    "@types/express": "^5.0.6"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "mysql2": "^3.16.0",
+    "typeorm": "^0.3.28"
   }
 }
